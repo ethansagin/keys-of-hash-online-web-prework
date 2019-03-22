@@ -2,12 +2,12 @@ require 'pry'
 
 class Hash
   def keys_of(*args)
-    self.map do |k, v|
+    self.map { |k, v|
       if args.include?(v)
         k
       else
         nil
       end
-    end.compact
+    }.compact
   end
 end
