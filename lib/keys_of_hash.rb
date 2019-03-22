@@ -8,7 +8,6 @@ class Hash
       else
         nil
       end
-    end
-    
+    end.compact
   end
 end
